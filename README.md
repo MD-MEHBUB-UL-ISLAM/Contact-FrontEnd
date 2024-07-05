@@ -35,3 +35,67 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 "# Contact-FrontEnd" 
+# Contact Signup Frontend
+
+This is a Next.js frontend project that provides a user interface for managing contact signups.
+
+## Requirements
+
+- Node.js
+- npm (or yarn)
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/contact-signup-frontend.git
+    cd contact-signup-frontend
+    ```
+
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Create a `.env.local` file in the root directory and add your backend API URL:
+    ```env
+    NEXT_PUBLIC_API_URL=http://localhost:3000
+    ```
+
+4. Start the development server:
+    ```sh
+    npm run dev
+    ```
+
+5. The application should now be running at `http://localhost:3001`.
+
+## Pages
+
+### Sign Up Page
+
+Accessible at `/signup`. This page allows users to sign up for the contact list. The form includes fields for:
+- Name
+- Address
+- Phone number
+- Email
+- Hobbies (with a searchable dropdown)
+
+### Admin Contacts Page
+
+Accessible at `/admin/contacts`. This page displays a list of all contacts in the database.
+
+## Custom Components
+
+### HobbiesInput
+
+A custom input component for selecting hobbies. Features include:
+- Searching through a predefined list of hobbies
+- Allowing arbitrary values
+- Keyboard navigation
+- Deleting selected hobbies with backspace
+
+## License
+
+This project is licensed under the MIT License.
+
+

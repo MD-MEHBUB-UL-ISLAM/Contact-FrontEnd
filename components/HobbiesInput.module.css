@@ -1,0 +1,51 @@
+.hobbiesInput {
+    position: relative;
+  }
+  
+  .selectedHobbies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  
+  .hobby {
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    padding: 4px 8px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .suggestions li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestions li.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .noSuggestions {
+    padding: 8px;
+    color: #999;
+  }
+  
